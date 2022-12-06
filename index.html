@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop in Crans</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: content-box;
+        font-family: "Montserrat", sans-serif;
+        height: 100%;
+        font-size: clamp(1rem, 2vw, 2rem)
+      }
+      #contenedor {
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+      }
+      #logo {
+        width: 60%;
+      }
+      #izq,
+      #der {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+     
+      #der {
+        background: #86b91e;
+      }
+      a,
+      span {
+        text-decoration: none;
+        color: #fff;
+      }
+      span{
+        font-size: clamp(1rem, 1.5vw, 2.5rem);
+      }
+      li {
+        list-style: none;
+        padding-bottom: 0.3em;
+        display: flex;
+      }
+      .ico {
+        padding-right: 0.5em;
+        width: clamp(1rem, 1.5vw, 2rem)
+      }
+      #tel {
+        font-weight: bold;
+        font-size: clamp(6em, 12vw, 8m);
+        font-size: 2.5vw;
+      }
+      p{
+        font-weight: bold;
+      }
+
+      /* cel */
+      @media (max-width: 415px) {
+        #izq,
+        #der {
+          flex: 1 0 100%;
+        
+        }
+
+        #tel {
+        font-size: 5.5vw;
+      }
+      }
+
+
+    </style>
+    <div id="contenedor">
+      <div id="izq">
+        <img
+          id="logo"
+          src="/shopincrans-logo.svg"
+          alt="Shop in Crans Montana"
+        />
+      </div>
+      <div id="der">
+        <ul>
+          <span>Site en construction</span>
+          <li>
+            <a id="tel" href="tel:+027 481 39 56"> 027 481 39 56</a>
+          </li>
+          <li>
+            <img class="ico" src="email.svg" alt="email to jpbarras" />
+            <a href="mailto:info@jpbarras.ch"> info@jpbarras.ch</a>
+          </li>
+          <li>
+            <img class="ico" src="marker.svg" alt="jpbarras" />
+            <a href="https://www.google.com/search?sxsrf=ALiCzsYK4HDvAZ9dYvH9HckPt2-Nf_Ll0g:1670368023075&q=Quincaillerie+Shop+in+Crans+%26+Jean-Paul+Barras+Electricit%C3%A9&ludocid=14600633811878628485&gsas=1&lsig=AB86z5V-lhW7-NM2PJ3RCKNadcMz&sa=X&ved=2ahUKEwij_aLljeb7AhVML0QIHUw9Ce8QoAJ6BAgTEAw&biw=1706&bih=883&dpr=2.25#" target="_blank"> Grand-Place 7 - Crans-Montana</a>
+          </li>
+          <p>
+            Electricité - Electroménager <br />
+            Quincaillerie - Art de la table
+          </p>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
